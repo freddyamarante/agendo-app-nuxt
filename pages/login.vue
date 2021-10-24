@@ -2,13 +2,13 @@
   <div>
     <el-form ref="form" :model="form" label-width="120px">
       <el-form-item label="Correo">
-        <el-input v-model="form.name" type="email"></el-input>
+        <el-input v-model="form.email" type="email"></el-input>
       </el-form-item>
       <el-form-item label="Contraseña">
         <el-input v-model="form.password" type="password"></el-input>
       </el-form-item>
       <el-form-item label="Recordarme">
-        <el-checkbox v-model="rememberMe"></el-checkbox>
+        <el-checkbox v-model="form.rememberMe"></el-checkbox>
       </el-form-item>
         <el-button type="primary" @click="onSubmit">Create</el-button>
         <el-button>Cancel</el-button>
